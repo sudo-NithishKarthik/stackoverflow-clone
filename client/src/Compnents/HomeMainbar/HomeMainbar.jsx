@@ -10,10 +10,10 @@ const HomeMainbar = () => {
 
 	const location = useLocation();
 	const navigate = useNavigate();
-	const user = 1;
+	const User = useSelector((state) => state.currentUserReducer);
 	const checkAuth = () => {
-		if (user === null) {
-			alert("lognin ya signup krna pdega...hmmmm");
+		if (User === null) {
+			alert("login/signup please");
 			navigate("/auth");
 		} else {
 			navigate("/askquestion");

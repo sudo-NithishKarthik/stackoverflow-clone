@@ -67,12 +67,16 @@
 
 .nav-links {
 	padding: 7px 13px;
-	border: solid 1px blue;
+	border: solid 1px #0086d8;
 	border-radius: 3px;
 	background-color: #e7f8f8;
 	cursor: pointer;
 }
-
+#signup {
+	font-weight: 400;
+	color: white;
+	background-color: #009dff;
+}
 .nav-links:hover {
 	background-color: #fbd5d5;
 }

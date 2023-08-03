@@ -13,7 +13,7 @@ import {
 	postAnswer,
 	voteQuestion,
 } from "../../actions/question.js";
-import copy from "copy-to-clipboard";
+// import copy from "copy-to-clipboard";
 
 const QuestionDetails = () => {
 	const navigate = useNavigate();
@@ -132,7 +132,7 @@ const QuestionDetails = () => {
 														className="user-link"
 													>
 														<Avatar
-															backgroundColor="red"
+															backgroundColor="#f5d442"
 															px="10px"
 															py="7px"
 														>

@@ -18,25 +18,23 @@ const AskQuestion = () => {
 	//
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log({
-			questionTitle,
-			questionBody,
-			questionTags,
-			userPosted: User.result.name,
-			userId: User.result._id,
-		});
-		disptach(
-			askQuestion(
-				{
-					questionTitle,
-					questionBody,
-					questionTags,
-					userPosted: User.result.name,
-					userId: User.result._id,
-				},
-				navigate
-			)
-		);
+		if (User === null) {
+			alert("Please login or signup to answer a question..:)");
+			navigate("/auth");
+		} else {
+			disptach(
+				askQuestion(
+					{
+						questionTitle,
+						questionBody,
+						questionTags,
+						userPosted: User.result.name,
+						userId: User.result._id,
+					},
+					navigate
+				)
+			);
+		}
 	};
 	const handleEnter = (e) => {
 		if (e.key === "Enter") {

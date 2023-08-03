@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../../App.css";
 import TagsList from "./TagsList";
 import "./Tags.css";
 import { tagsList } from "./allTags";

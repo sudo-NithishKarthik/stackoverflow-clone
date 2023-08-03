@@ -8,7 +8,7 @@ import decode from "jwt-decode";
 import logo from "../../assets/logo.png";
 import search from "../../assets/search-solid.svg";
 import Avatar from "../Avatar/Avatar";
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 
 import "./navbar.css";
 
@@ -27,6 +27,7 @@ const Navbar = () => {
 		}
 		const curUser = JSON.parse(localStorage.getItem("Profile"));
 		dispatch(setCurrentUser(curUser));
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [dispatch]);
 
 	const handleLogout = () => {
@@ -59,7 +60,7 @@ const Navbar = () => {
 					/>
 				</form>
 				{User === null && (
-					<Link to="/auth" className="nav-links nav-item">
+					<Link to="/auth" className="nav-links nav-item" id="signup">
 						Sign up
 					</Link>
 				)}

@@ -41,7 +41,7 @@ const DisplayAnswer = ({ question, handleShare, User }) => {
 								style={{ color: "#0086d6" }}
 								className="user-link"
 							>
-								<Avatar backgroundColor="blue" px="14px" py="7px">
+								<Avatar backgroundColor="#f674fc" px="14px" py="7px">
 									{ans.userAnswered &&
 										ans.userAnswered.charAt(0).toUpperCase()}{" "}
 								</Avatar>

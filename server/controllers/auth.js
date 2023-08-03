@@ -46,7 +46,7 @@ export const login = async (req, res) => {
 			{ email: existinguser.email, id: existinguser._id },
 			"test",
 			{
-				expiresIn: "24h",
+				expiresIn: "1h",
 			}
 		);
 		res.status(200).json({ result: existinguser, token });
